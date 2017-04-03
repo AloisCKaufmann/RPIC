@@ -8,11 +8,11 @@ import time
 date = datetime.datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 camera = PiCamera()
 
 while True:
-        input_state = GPIO.input(18)
+        input_state = GPIO.input(21)
         if input_state == False:
                 print("button pressed")
                 time.sleep(0.2)
