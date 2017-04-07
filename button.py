@@ -16,14 +16,14 @@ while True:
         if input_state == False:
                 print("button pressed")
                 time.sleep(0.2)
-                camera.rotation = 180
+                camera.rotation = 270
                 camera.start_preview()
                 if input_state == False:
                     camera.start_preview ()
                     camera.preview_fullscreen = True
                     camera.preview_alpha = 255
-                    time.sleep(45)  
-                    print("Foto")
-                    camera.capture('/home/pi/Desktop/'+ date + '.jpg' )
-                    camera.stop_preview()
+                    if input_state == False:
+                        camera.stop_preview()
+                        print("Foto")
+                        camera.capture('/home/pi/Desktop/'+ date + '.jpg' )
                         
