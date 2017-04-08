@@ -18,7 +18,6 @@ while True:
                 print("button pressed")
                 time.sleep(0.2)
                 camera.rotation = 270
-                camera.start_preview()
                 if input_state == False:
                     camera.start_preview ()
                     camera.preview_fullscreen = True
