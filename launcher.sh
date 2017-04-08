@@ -6,5 +6,4 @@ vncserver
 cd /
 cd home/pi/RPIC
 git pull
-sudo python button.py &
 cd /
