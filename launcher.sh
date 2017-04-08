@@ -4,6 +4,6 @@
 
 vncserver
 cd /
-cd home/pi/RPIC
+cd /home/pi/RPIC
 git pull
 cd /
